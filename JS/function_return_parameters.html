@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addition(a,b)
+        {
+            var res_add=a+b
+            return res_add
+        }
+        document.write("addition is:"+addition(10,20)+"<br>")
+
+        function subtraction(c)
+        {
+            var res_add1=addition(20,30)
+            var res_sub=res_add1-c
+            //document.write("subtraction is:"+res_sub)
+            return res_sub
+        }
+        document.write("subtraction is:"+subtraction(10)+"<br>")
+
+        function multiplication(d)
+        {
+            var res2_sub=subtraction(10)
+            var res_mul=res2_sub*d
+            document.write("multiplication is:"+res_mul)
+        }
+        multiplication(5)
+    </script>
+</body>
+</html>

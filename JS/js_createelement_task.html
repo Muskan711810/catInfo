@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sample
+        {
+            border: 1px solid red;
+            box-sizing: border-box;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="createElementtask()" id="btn">click</button>
+    <script>
+
+        function createElementtask()
+        {
+            var div_ele=document.createElement("div")
+            div_ele.setAttribute("class","sample")
+            document.getElementById("btn").after(div_ele)
+
+            var h1_ele=document.createElement("h1")
+            h1_ele.innerHTML="heading"
+            div_ele.prepend(h1_ele)
+        
+        }
+    </script>
+</body>
+</html>

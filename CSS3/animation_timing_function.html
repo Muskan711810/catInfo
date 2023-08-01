@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3-animation timing function</title>
+    <style>
+        .div
+        {
+            width: 10%;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+            animation-name: my;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        .div1
+        {
+            animation-timing-function: ease;
+        }
+        .div2
+        {
+            animation-timing-function: ease-in;
+        }
+        .div3
+        {
+            animation-timing-function: ease-out;
+        }
+        .div4
+        {
+            animation-timing-function: ease-in-out;
+        }
+        .div5
+        {
+            animation-timing-function: linear;
+        }
+        @keyframes my{
+            from{left: 0%;}
+            to{left: 50%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="div div1">ease</div>
+    <div class="div div2">ease-in</div>
+    <div class="div div3">ease-out</div>
+    <div class="div div4">ease-in-out</div>
+    <div class="div div5">linear</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1
+        {
+            width: 40%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: lightgray;
+        }
+        .h1
+        {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(
+            function()
+            {
+                $("#btn").click(
+                    function()
+                    {
+                        $("#div1").remove
+                        // $("#div1").empty
+                    }
+                )
+            }
+        )
+    </script>
+</head>
+<body>
+    <button id="btn">click</button>
+    <div class="div1" id="div1">
+        <h1>Remove and Empty</h1>
+        <p>paragraph</p>
+        <span>span</span>
+    </div>
+</body>
+</html>

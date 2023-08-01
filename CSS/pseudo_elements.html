@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CSS-pseudo-elements</title>
+    <style>
+        /* p::first-letter */
+        .sample::first-letter
+        {
+            color: red;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        .sample::first-line
+        {
+            color: blue;
+        }
+        ::selection
+        {
+            color: red;
+            background-color: lightgrey;
+        }
+        .sample::after
+        {
+            /* contact:hello */
+            content: url(../images/gif_image.gif);
+        }
+        .sample::before
+        {
+            content: "hello";
+        }
+        ul li::marker
+        {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>pseudo elements</h1>
+    <p class="sample">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores dolorum, esse labore nam repellat! Architecto molestiae, provident possimus mollitia ea deserunt ad, recusandae aut adipisci accusamus optio est id.
+        Sit voluptatum error ex culpa quidem voluptas praesentium ratione non quam in expedita aspernatur, explicabo commodi voluptate numquam distinctio quae sunt possimus deserunt assumenda, aperiam reprehenderit voluptates. Est, facere aperiam.
+        Quia facere possimus fugit eveniet facilis, sed saepe autem numquam eius quae fugiat cum, cumque beatae amet dolores, temporibus est praesentium sunt sequi quasi quidem laudantium? Dicta rerum sint iusto?
+        Animi sequi ad explicabo non dolor quaerat maiores sint repellat! Itaque esse doloremque, placeat inventore odit voluptatum impedit deleniti excepturi quam laudantium voluptatibus. Error, iste nihil inventore eligendi reiciendis deleniti.
+        Eius, nesciunt fugit? Similique minima laboriosam earum officia? Dolore fugiat recusandae quam ea maxime alias sint labore voluptatum quisquam nisi neque temporibus, saepe tenetur architecto veritatis magnam nesciunt consectetur illum.
+        Ea qui eius assumenda nemo natus ullam non ducimus? Recusandae ab fugit neque voluptates alias odit sit! Minima cum porro provident ipsum exercitationem, magni repellendus sunt earum dolor quo doloremque!
+        Ex sunt animi eveniet cum aut sit provident. Quaerat, a? Amet vitae deleniti cum laboriosam inventore voluptates voluptatem nesciunt saepe, deserunt officiis reiciendis laudantium facilis a totam itaque, optio maxime.
+    </p>
+    <ul>
+        <li>Home</li>
+        <li>Aboutus</li>
+    </ul>
+</body>
+</html>

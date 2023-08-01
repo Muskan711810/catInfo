@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1
+        {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        .para
+        {
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" id="div1">
+        <p class="para" id="para">paragraph</p>
+    </div>
+    <script>
+        function sample()
+        {
+            alert("paragraph is called!")
+        }
+        function sampl1()
+        {
+            alert("div is called!")
+        }
+        //bubbling
+        // document.getElementById("para").addEventListener("click",sample)
+        // document.getElementById("div1").addEventListener("click",sampl1)
+ 
+        //capturing
+        document.getElementById("para").addEventListener("click",sample,true)
+        document.getElementById("div1").addEventListener("click",sampl1,true)
+    </script>
+</body>
+</html>

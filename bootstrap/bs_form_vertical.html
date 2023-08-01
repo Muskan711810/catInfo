@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bt_css/bootstrap.min.css">
+    <script src="bt_js/jquery-3.6.3.min.js"></script>
+    <script src="bt_js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <form action="#">
+                    <div class="form group">
+                        <label for="uname">username:</label>
+                        <input type="text" name="uname" id="uname" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pwd">password:</label>
+                        <input type="password" name="pwd" id="pwd" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addr">address:</label>
+                        <textarea class="form-control" id="addr" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cntry">country:</label>
+                        <select class="form-control">
+                            <option value="0">select country</option>
+                            <option value="1">India</option>
+                            <option value="2">USA</option>
+                            <option value="3">Germany</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rng">Range:</label>
+                        <input type="range" class="form-control-range" id="rng">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file">File:</label>
+                        <input type="file" id="file" class="form-control-file border">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="form-check">
+                            <label for="female" class="form-check-label">
+                                <input type="radio" id="female" class="form-check-input">Female
+                            </label>
+                        </div>
+                    
+                    <div class="form-check">
+                            <label for="male" class="form-check-label">
+                                <input type="radio" id="female1" class="form-check-input">Male
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="form-check">
+                        <label>Gender:</label>
+                        <div class="form-check-inline">
+                            <label for="female1" class="form-check-label">
+                                <input type="radio" id="female1" class="form-check-input">Female
+                            </label>
+                        </div>
+                    </div>
+
+                    
+
+                    <button type="submit" class="btn btn-danger">SingUp</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

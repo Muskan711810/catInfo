@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table_container
+        {
+            width: 50%;
+            border: 1px solid black;
+            box-sizing: left;
+            overflow-x: auto;
+        }
+        .tb1
+        {
+            width: 100%;
+        }
+        .tb1 th
+        {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .tb1 tr td
+        {
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }      
+        .tb1 tr:nth-child(even)
+        {
+            background-color: lightgray;
+        }
+        .tb1 tr:hover
+        {
+            background-color: antiquewhite;
+        }
+    </style>
+    </head>
+<body>
+    <div class="table_container">
+        <table class="tb1" cellspacing="0">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile.no</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>john@gmail.com</td>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Alice</td>
+                <td>Alice@gmail.com</td>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>peter</td>
+                <td>peter@gmail.com</td>
+                <td>1234567890</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Arithmetic operation (+,-,*,/,%,**)<br>")
+        document.write("------------------------------------<br>")
+
+        var num1=10
+        var num2=20
+        var add=num1+num2
+        document.write("addition is:"+add+"<br>")
+
+        var sub=num1-num2
+        document.write("subtraction is:"+sub+"<br>")
+
+        var mul=num1*num2
+        document.write("multiplication is:"+mul+"<br>")
+
+        var divison=num1/num2
+        document.write("division is:"+divison+"<br>")
+
+        var mod=num1%num2
+        document.write("modulus is:"+mod+"<br>")
+
+        var exponent=num1**num2
+        document.write("exponent is:"+exponent+"<br><br>")
+
+        document.write("assignment operation (=,+=,-=,*=,/=,%=,**=)<br>")
+        document.write("------------------------------------<br>")
+
+        var num3=10
+        var num4=20
+
+        num3+=num4  //num3=num3+num3
+        document.write("addition is:"+num3+"<br>")
+
+        num3-=num4  //num3=num3-num4
+        document.write("subtraction is:"+num3+"<br>")
+
+        num3*=num4
+        document.write("multiplication is:"+num3+"<br>")
+
+        num3/=num4
+        document.write("Division is:"+num3+"<br>")
+
+        num3%=num4
+        document.write("modulus is:"+num3+"<br>")
+
+        num3**=num4
+        document.write("exponent is:"+num3+"<br>")
+        
+        document.write("comparison operation (==,===,>,>=,<,<=,!=)<br>")
+        document.write("------------------------------------<br>")
+
+        var num5=10
+        var num6=10
+       
+         var res1=(num5==num6) //compare only values
+         document.write(res1+"<br>")
+
+         var res2=(num5===num6) //compare values and datatypes
+         document.write(res2+"<br>")
+
+         var res3=(num5>num6) 
+         document.write(res3+"<br>")
+
+         var res4=(num5>=num6) 
+         document.write(res4+"<br>")
+
+         var res5=(num5<num6) 
+         document.write(res5+"<br>")
+
+         var res6=(num5<=num6) 
+         document.write(res6+"<br>")
+
+         var res7=(num5!=num6) 
+         document.write(res7+"<br>")
+
+        document.write("Logical operation (&&,||,! <br>")
+        document.write("------------------------------------<br>")
+
+        var num7=30
+        var num8=40
+        var res4=((num7<num8) && (num7!=0))
+        document.write(res1+"<br>")
+
+        var res5=((num7>num8) || (num7!=0))
+        document.write(res5+"<br>")
+
+        var res7=!((num7<num8) && (num7!=0))
+        document.write(res7+"<br>") //! not is opposite of and &
+
+        document.write("conditional operation (?,: <br>")
+        document.write("------------------------------------<br>")
+
+        var num7=10
+        var num9=5
+
+        var res7=(num7>num9)?"num7 is greater":"num8 is greater"
+        document.write(res7)
+
+
+
+    </script>
+</body>
+</html>

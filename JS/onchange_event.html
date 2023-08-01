@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-Onchange Event</title>
+</head>
+<body>
+    <select id="cntry" onchange="getvalue()">
+        <option value="0">select country</option>
+        <option value="1">India</option>
+        <option value="2">USA</option>
+        <option value="3">Germany</option>
+    </select>
+    <img src="" id="img1" alt="" width="400">
+    <p id="para"></p>
+    <script>
+        function getvalue()
+        {
+            var val=document.getElementById("cntry").value  
+            // document.getElementById("para").innerHTML=val
+            alert(val)
+            if(val==1)
+            {
+                document.getElementById("img1").src="../images/indiaflag.jpg"
+            }
+            else if(val==2)
+            {
+                document.getElementById("img1").src="../images/USAflag.png"
+            }
+            else if(val==3)
+            {
+                document.getElementById("img1").src="../images/Germanyflag.jpg"
+            }
+            else
+            {
+                document.getElementById("img").src=""
+            }
+
+        }
+    </script>
+</body>
+</html>

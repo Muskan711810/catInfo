@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3-transition property</title>
+    <style>
+        .div1
+        {
+            width: 10%;
+            height: 100px;
+            background-color: red;
+            /* transition-property: background-color,width,height; */
+            /* transition-duration: 2s,3s,4s; */
+            /* transition-delay: 2s,3s,4s; */
+            transition: background-color 2s, width 2s 2s, height 2s 2s; /*transition-property transition-duration transition-delay*/
+        }
+        .div1:hover
+        {
+            background-color: yellow;
+            width: 20%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>

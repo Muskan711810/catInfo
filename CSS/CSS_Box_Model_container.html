@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        .outerContainer
+        {
+            background-color: antiquewhite;
+            width: 48%;
+            height: 100px;
+            border: 1px solid black;
+            padding: 50px; /* T/R/B/L */
+            box-sizing: border-box;
+            float: left;
+            margin: 10px 1%; /*T/B/R/L */
+        }
+    </style>
+</head>
+<body>
+    <div class="outerContainer">
+        container 1
+    </div>
+    <div class="outercontainer">
+        container 2
+    </div>
+</body>
+</html>

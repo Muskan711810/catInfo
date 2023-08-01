@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+        //val() //value attribute
+        //html() //innerHTML
+        //text() //innerText
+        //attr("attribute name") //any attribute
+        
+        $(document).ready(
+            function()
+            {
+                $("#btn1").click(
+                    function()
+                    {
+                        var res1=$("#para").html()
+                        //alert(res1)
+                        // document.getElementById("para_res").innerHTML=res1
+                        $("#para_res").html(res1)
+                    }
+                )
+                $("#btn2").click(
+                    function()
+                    {
+                        var res2=$("#para2").text()
+                        // alert(res2)
+                        $("#para2_res").html(res2)
+                    }
+                )
+                $("#btn3").click(
+                    function()
+                    {
+                        var res3=$("#txt1").val()
+                        // alert(res3)
+                        $("#txt1_res").val(res3)
+                    }
+                )
+                $("#btn4").click(
+                    function()
+                    {
+                        // var res4=$("#anc").attr("href")
+                        // alert(res4)
+                        // var res5=$("#anc").attr("title")
+                        // alert(res5)
+
+                        //attr({attributename:value,...})
+                        $("#anc").attr({href:"http://www.flipkart.com",title:"flipkart",target:"_blank"})
+
+                        $("#anc").html("flipkart")
+                    }
+                )
+            }
+        )
+    </script>
+</head>
+<body>
+    <button id="btn1">Get HTML</button>
+    <p id="para">This is a <strong>paragraph</strong></p>
+    <p id="para_res"></p>
+
+    <button id="btn2">Get Text</button>
+    <p id="para2">This is a paragraph</p>
+    <p id="para2_res"></p>
+
+    <button id="btn3">Get Value</button>
+    <input type="text" id="txt1" placeholder="enter name"><br><br>
+    <input type="text" id="txt1_res"><br><br>
+
+    <button id="btn4">Get attribute</button><br><br>
+    <a href="http://www.itview.in" id="anc" title="itview">Link Text</a>
+</body>
+</html>

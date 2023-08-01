@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(
+            function()
+            {
+                //siblings
+                // $("h4").siblings().css("color","red")
+                // $("h4").siblings("p").css("color","red")
+                // $("h4").prev().css("color","red")
+                // $("h4").prevAll().css("color","red")
+                // $("h4").prevUntil("p").css("color","red")
+                // $("h4").next().css("color","red")
+                // $("h4").nextAll().css("color","red")
+                // $("h4").nextUntil("h5").css("color","red")
+
+                //filtering
+                // $("p").first().css("color","red")
+                // $("p").last().css("color","red")
+                // $("p").eq(1).css("color","red")
+                // $("p").filter(".sample").css("color","red")
+                $("p").not(".sample").css("color","red")
+            }
+        )
+    </script>
+</head>
+<body>
+    <h1>Heading1</h1>
+    <p>paragraph1</p>
+    <span>span1</span>
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+    <h4>Heading4</h4>
+    <p class="sample">paragraph2</p>
+    <p>paragraph3</p>
+    <span>span2</span>
+    <h5>Heading5</h5>
+    <h6>Heading6</h6>
+</body>
+</html>

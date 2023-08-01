@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+        //jquery Add
+        //append()
+        //prepend()
+        //before()
+        //after()
+
+        $(document).ready(
+            function()
+            {
+                $("#btn").click(
+                    function()
+                    {
+                        // $("#list").append("<list>New value</li>")
+                        // $("#list").prepend("<list>New value</li>")
+                        // $("#list").after("<ul type='circle'><li>New value</li></ul>")
+                        $("#list").before("<ul type='circle'><li>New value</li></ul>")
+                    }
+                )
+            }
+        )
+    </script>
+</head>
+<body>
+    <button id="btn">JQuery - add</button>
+    <ol id="list">
+        <li>Home</li>
+        <li>AboutUs</li>
+        <li>ContactUs</li>
+    </ol>
+</body>
+</html>

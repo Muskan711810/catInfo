@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3 variable</title>
+    <style>
+        :root  /*to create variable*/
+        {
+            /* --variablename:value */
+            --redvar:black;
+            --brownvar:brown;
+            --font20:20px;
+        }
+        .div1
+        {
+            width: 50%;
+            border: 1px solid var(--redvar);  /*var() is a function,to use the value of the function*/
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        h1
+        {
+            border-bottom: 1px solid var(--redvar);
+            display: inline-block;
+            color: var(--brownvar);
+            margin-bottom: 10px;
+        }
+        p
+        {
+            font-size: var(--font20);
+            color: var(--brownvar);
+        }
+        span
+        {
+            font-size: var(--font20);
+            color: var(--redvar);
+        }
+        button
+        {
+            padding: 12px 20px;
+            box-sizing: border-box;
+            background-color: var(--brownvar);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>css variable</h1>
+    <div class="div1">
+        <h2>heading text</h2>
+        <p>paragraph</p>
+        <span>stan tag</span>
+    </div>
+    <button>read more</button>
+</body>
+</html>

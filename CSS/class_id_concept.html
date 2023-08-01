@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS- Internal CSS</title>
+    <style>
+        body,h3
+        {
+            margin: 0;
+        }
+        .wrapper
+        {
+            width: 100%;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .header, .footer
+        {
+            width: 100%;
+            padding: 50px 0px;
+            background-color: #002347;
+            float: left;
+        }
+        .para_heading
+        {
+            text-align: center;
+            color: white;
+        }
+        .color_black
+        {
+            color: black;
+        }
+        .menu
+        {
+            width: 100%;
+            padding: 15px 0px;
+            background-color: aliceblue;
+            float: left;
+        }
+        .left, .right
+        {
+            width: 10%;
+            background-color: lightgray;
+            padding: 250px 0px;
+            float: left;
+        }
+        .middle
+        {
+            width: 80%;
+            background-color: antiquewhite;
+            padding: 250px 0px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p class="para_heading">header</p>
+    </div>
+        <div class="menu">
+           <p class="para_heading color_black">menu</p>
+        </div>
+        <div class="left">
+           <p class="para_heading color_black">left</p>
+        </div>
+        <div class="middle">
+            <p class="para_heading color_black">middle</p>
+        </div>
+        <div class="right">
+            <p class="para_heading color_black">menu</p>
+        </div>
+        <div class="footer">
+            <p class="para_heading">footer</p>
+        </div>
+    </div>
+</body>
+</html>
+    
+</body>
+</html>

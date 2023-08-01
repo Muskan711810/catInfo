@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<h1><u>Student Registration Form</u> </h1>
+<body bgcolor="grey">
+    <form action="#">
+    <label for="First Name">FIRST NAME</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="First name" id="" required <p> (max 30 characters a-z and A-Z)</p>
+    <label for="Last Name">LAST NAME</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Last Name" id="" required <p> (max 30 characters a-z and A-Z)</p>
+    <label for="Date of Birth">DATE OF BIRTH</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dob_day" id="" required>
+     <option value="Day" >Day</option>
+     <option value="1" >1</option>
+     <option value="2" >2</option>
+     <option value="3" >3</option>
+     <option value="4" >4</option>
+     <option value="5" >5</option>
+     <option value="6" >6</option>
+     <option value="7" >7</option>
+     <option value="8" >8</option>
+     <option value="9" >9</option>
+     <option value="10" >10</option>
+     </select><select name="dob_month" id="" required>
+        <option value="Month">Month</option>
+        <option value="Jan">Jan</option>
+        <option value="Feb">Feb</option>
+        <option value="Mar">Mar</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="Aug">Aug</option>
+        <option value="Sep">Sep</option>
+        <option value="Oct">Oct</option>
+        <option value="Nov">Nov</option>
+         <option value="Dec">Dec</option>
+     </select><select name="dob_Year" id="" required>
+        <option value="Year">Year</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2000</option>
+        <option value="2004">2000</option>
+        <option value="2005">2000</option>
+        <option value="2006">2000</option>
+        <option value="2007">2000</option>
+        <option value="2008">2000</option>
+        <option value="2009">2000</option>
+        <option value="2010">2010</option>
+     </select><br><br>
+     <label for="EMAIL ID">EMAIL ID</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" id="" required><br><br>
+     <label for="MOBILE NUMBER">MOBILE NUMBER</label>
+    &nbsp;&nbsp;<input type="tel" name="tel" id="" required <p> (10 Digit Number)</p><br>
+     <label for="Gender">GENDER</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Male<input type="radio" name="gender_male" >
+     Female<input type="radio" name="gender_female" ><br><br>
+    
+     ADDRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="Address" id="" cols="30" rows="2" required></textarea><br><br>
+     <label for="CITY">CITY</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="city" required <p> (Max 30 characters a-z and A-Z)</p><br><br>
+     <label for="Pincode">PIN CODE</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" name="pincode" required <p> ( 6 Digit Number)</p><br><br>
+     <label for="STATE">STATE</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="state" required<p> (Max 30 characters a-z and A-Z)</p><br><br>
+     <label for="COUNTRY">COUNTRY</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="country" id="" required value="INDIA"><br><br>
+     <label for="Hobbies">HOBBIES</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Drawing<input type="checkbox"> &nbsp;Singing <input type="Checkbox">&nbsp;Dancing <input type="Checkbox">&nbsp;Sketching <input type="Checkbox"><br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Others <input type="Checkbox" name="" id=""> <input type="text"><br><br>
+     QUALIFICATION<table  border="0" cellspacing="0" cellpadding="2">
+        <tr>
+            <td>SI.NO.</td>
+            <td>Examination</td>
+            <td>Board</td>
+            <td>Percentage</td>
+            <td>Year of Passing</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Class X</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Class XII</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Graduation</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Masters</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right">(10 char max)</td>
+            <td colspan="2" align="left">(Upto 2 decimal)</td>
+        </tr>
+     </table><br><br>
+     <label for="Courses applied for">COURSES<br>APPLIED FOR</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCA<input type="Radio" required>&nbsp;B.Com<input type="Radio" required>&nbsp;B.Sc<input type="Radio" required>&nbsp;B.A<input type="Radio" required><br><br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Submit">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset">
+
+    </form>
+</body>
+</html>

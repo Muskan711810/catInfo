@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sample()">click</button>
+    <h3 class="test">Get Element By Classname</h3>
+    <p class="test">paragraph1</p>
+    <p class="test">paragraph2</p>
+    <p class="test">paragraph3</p>
+
+    <script>
+        function sample()
+        {
+            var res=document.getElementsByClassName("test")
+            //alert(res)
+
+            // var res=document.getElementsByClassName("test").length
+            //alert(res)
+            alert(res[1].innerHTML)
+        }
+    </script>
+</body>
+</html>

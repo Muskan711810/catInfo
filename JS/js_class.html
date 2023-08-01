@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sample
+        {
+            color: red;
+            font-size: 20px;
+        }
+        .para
+        {
+            background-color: lightgrey;
+        }
+        .sample1
+        {
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="applycss()">add class</button>
+    <p class="para" id="para">this is an example of js-css</p>
+    <script>
+        function applycss()
+        {
+            // document.getElementById("para").classList.add("sample")
+            // document.getElementById("para").classList.add("sample1")
+            document.getElementById("para").classList.remove("para")
+            document.getElementById("para").classList.toggle("para")
+        }
+    </script>
+</body>
+</html>

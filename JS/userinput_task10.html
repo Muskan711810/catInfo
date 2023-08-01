@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt1">
+    <input type="text" id="txt2">
+    <button onclick="addition()">+</button>
+    <button onclick="subtraction()">-</button>
+    <button onclick="multiplication()">*</button>
+    <button onclick="division()">/</button>
+    <p id="para"></p>
+    <script>
+        function addition()
+        {
+            var val1=document.getElementById("txt1").value
+            var val2=document.getElementById("txt2").value
+            var res_add=parseFloat(val1)+parseFloat(val2)
+            document.getElementById("para").innerHTML=res_add
+        }
+        function subtraction()
+        {
+            var val1=document.getElementById("txt1").value
+            var val2=document.getElementById("txt2").value
+            var res_sub=parseFloat(val1)-parseFloat(val2)
+            document.getElementById("para").innerHTML=res_sub
+
+        }
+        function multiplication()
+        {
+            var val1=document.getElementById("txt1").value
+            var val2=document.getElementById("txt2").value
+            var res_mul=parseFloat(val1)*parseFloat(val2)
+            document.getElementById("para").innerHTML=res_mul
+
+        }
+        function division()
+        {
+            var val1=document.getElementById("txt1").value
+            var val2=document.getElementById("txt2").value
+            var res_division=parseFloat(val1)/parseFloat(val2)
+            document.getElementById("para").innerHTML=res_division
+
+        }
+
+    </script>
+</body>
+</html>

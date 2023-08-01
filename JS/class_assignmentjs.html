@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js  user input</title>
+    <style>
+        .sample
+        {
+            color: red;   
+        }
+        .sample1
+        {
+            color: blue;
+        }
+        .sample2
+        {
+            color: lightpink;
+        }
+    </style>
+</head>
+<body>
+   <input type="password" id="txt1" oninput="sample()"> 
+   <p id="para_res" class="sample"></p>
+   <script>
+    function sample()
+    {
+        var val=document.getElementById("txt1").value.length
+        if(val<4)
+        {
+            document.getElementById("para_res").innerHTML="weak password"
+            document.getElementById("para_res").classList.add("sample")
+        }
+        else if(val>=4 && val<8)
+        {
+            document.getElementById("para_res").innerHTML="Normal password"
+            document.getElementById("para_res").classList.add("sample1")
+        }
+        else
+        {
+            document.getElementById("para_res").innerHTML="strong password"
+            document.getElementById("para_res").classList.add("sample2")
+        }
+    }
+   </script>
+</body>
+</html>

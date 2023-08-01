@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str="this is a 'string'"
+        document.write(str+"<br>")
+        var str1='this is a "string"'
+        document.write(str1+"<br>")
+
+        var str2=new String("this is a 'string'")
+        document.write(str2+"<br>")
+        document.write(typeof str2+"<br>")
+
+        var res=(str==str2)
+        document.write(res+"<br>")
+
+        var res1=(str===str2)
+        document.write(res1+"<br>")
+
+        var len_str=str.length
+        document.write(len_str+"<br>")
+        document.write(str[1]+"<br>")
+
+        var new_str=str.trim()  //trim removes first and last space automatically
+        document.write(new_str)
+        document.write(new_str.length+"<br>")
+
+        for(var x=0; x<str.length; x++)
+        {
+            document.write(str[x]+"<br>")
+        }
+    </script>
+</body>
+</html>

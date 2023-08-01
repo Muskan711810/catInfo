@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<body>
+    <form method="post" onsubmit="return formvalidation()">
+        <table align="center">
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type="text" id="uname">
+                </td>
+                <td><span id="msg1"></span></td>
+            </tr>
+            <tr>
+                <td>password:</td>
+                <td>
+                    <input type="password" id="pwd">
+                </td>
+                <td><span id="msg2"></span></td>
+            </tr>
+            <tr>
+                <td>confirm password:</td>
+                <td>
+                    <input type="password" id="cpwd">
+                </td>
+                <td><span id="msg3"></span></td>
+            </tr>
+            <tr>
+                <td>country:</td>
+                <td>
+                    <select id="cntry">
+                        <option value="0">select country</option>
+                        <option value="1">india</option>
+                        <option value="2">USA</option>
+                        <option value="3">germany</option>
+                    </select>
+                </td>
+                <td><span id="msg4"></span></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gen" id="gen1">Male
+                    <input type="radio" name="gen" id="gen2">Female
+                </td>
+                <td><span id="msg5"></span></td>
+            </tr>
+            <tr>
+                <td>photo:</td>
+                <td>
+                    <input type="file" id="photo" onchange="filevalidation()">
+                </td>
+                <td><span id="msg6"></span></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" id="btn">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+    <script>
+        function formvalidation()
+        {
+            var uname_val=document.getElementById("uname").value
+            if(uname_val=="")
+            {
+                document.getElementById("msg1").innerHTML="please enter username"
+                document.getElementById("msg1").style.color="red"
+                return false
+            }
+            if(!(document.getElementById("uname").value.match(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+?\.[a-zA-z]{2,3}$/)))
+            {
+                document.getElementById("msg1").innerHTML="please enter valid emailid"
+                document.getElementById("msg1").style.color="red"
+                return false
+            }
+            else
+            {
+                document.getElementById("msg1").innerHTML=""
+                document.getElementById("msg1").style.color="red"
+                // return false
+            }
+            if(document.getElementById("pwd").value=="")
+            {
+                document.getElementById("msg2").innerHTML="please enter password"
+                document.getElementById("msg2").style.color="red"
+                return false
+            }
+            if(document.getElementById("pwd").value.length<6 || 
+            document.getElementById("pwd").value.length>10)
+            {
+                document.getElementById("msg2").innerHTM
+                L="please enter password between 6 to 10"
+                document.getElementById("msg2").style.color="red"
+                return false
+            }
+            if(document.getElementById("pwd").value != 
+            document.getElementById("cpwd").value)
+            {
+                document.getElementById("msg3").innerHTML="not match with the password"
+                document.getElementById("msg3").style.color="red"
+                return false
+            }
+            if(document.getElementById("cntry").value==0)
+            {
+                document.getElementById("msg4").innerHTML="please select country"
+                document.getElementById("msg4").style.color="red"
+                return false
+            }
+            if(document.getElementById("gen1").checked==false &&
+               document.getElementById("gen2").checked==false)
+            {
+                document.getElementById("msg5").innerHTML="Please select gender"
+                document.getElementById("msg5").style.color="red"
+                return false
+            }
+
+        }
+        function filevalidation()
+        {
+            //alert("hello")
+            var filename=document.getElementById("photo").value
+            alert(filename)
+            var ext=filename.lastIndexOf(".")
+            alert(ext)
+            var ext_final=filename.substring(ext)
+            alert(ext_final)
+            if(ext_final==".jpg" || ext_final==".jpeg" || ext_final==".png")
+            {
+                document.getElementById("msg6").innerHTML=""
+                document.getElementById("btn").disabled=false
+            }
+            else
+            {
+                document.getElementById("msg6").innerHTML="please choose only jpg or jpeg or png file"
+                document.getElementById("btn").disabled=true
+
+            }
+        }
+    </script>
+</body>
+</html>

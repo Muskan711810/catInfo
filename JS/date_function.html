@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d=new Date()
+        document.write(d+"<br>")
+
+        var dis_date=d.getDate()
+        document.write(dis_date+"<br>")
+
+        var dis_year=d.getFullYear()
+        document.write(dis_year+"<br>")
+
+        var dis_mon=d.getMonth()
+        document.write((dis_mon+1)+"<br>")
+
+        var arr_month=["jan","feb","march","aprl","may","june","jul","aug","sep","oct","nov","dec"]
+        document.write(arr_month[d.getMonth()]+"<br>")
+
+        var dis_day=d.getDay()
+        document.write(dis_day+"<br>")
+
+        var dis_hour=d.getHours()
+        document.write(dis_hour+"<br>")
+
+        var dis_min=d.getMinutes()
+        document.write(dis_min+"<br>")
+
+        var dis_sec=d.getSeconds()
+        document.write(dis_sec+"<br>")
+
+        var date=d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear()
+        document.write(date+"<br>")
+
+        var date_print=d.toLocaleDateString()
+        document.write(date_print+"<br>")
+
+        var time_print=d.toLocaleTimeString()
+        document.write(time_print+"<br>")
+
+
+    </script>
+</body>
+</html>
